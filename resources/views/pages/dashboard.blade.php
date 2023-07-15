@@ -36,9 +36,10 @@
 
                             <div>
                                 <x-input-label for="answer" :value="$question->question"/>
-                                <x-text-input id="answer" name="answer" type="text" class="mt-1 block w-full"
-                                              required
-                                              autofocus/>
+
+                                <x-textarea id="answer" name="answer" class="mt-1 block w-full"
+                                            required
+                                            autofocus/>
                                 <x-input-error class="mt-2" :messages="$errors->get('answer')"/>
                             </div>
 
@@ -65,8 +66,8 @@
 
                         <div>
                             <x-input-label for="question" :value="__('Question')"/>
-                            <x-text-input id="question" name="question" type="text" class="mt-1 block w-full" required
-                                          autofocus/>
+                            <x-textarea id="question" name="question" class="mt-1 block w-full" required
+                                        autofocus/>
                             <x-input-error class="mt-2" :messages="$errors->get('question')"/>
                         </div>
 
