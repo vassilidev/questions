@@ -53,11 +53,11 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <header>
                         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                            {{ __('Create a question') }}
+                            {{ __('Créer une question') }}
                         </h2>
 
                         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                            {{ __("When you create a question it will be asked in random order to all users of the platform!") }}
+                            {{ __("La question sera poser dans un ordre aléatoire.") }}
                         </p>
                     </header>
 
@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <x-primary-button>{{ __('Create') }}</x-primary-button>
+                            <x-primary-button>{{ __('Créer') }}</x-primary-button>
 
                             @if (session('status') === 'question-created')
                                 <p
@@ -81,7 +81,7 @@
                                     x-transition
                                     x-init="setTimeout(() => show = false, 4000)"
                                     class="text-sm text-green-600 dark:text-green-400"
-                                >{{ __('Question created.') }}</p>
+                                >{{ __('La question a bien été créée.') }}</p>
                             @endif
                         </div>
                     </form>
